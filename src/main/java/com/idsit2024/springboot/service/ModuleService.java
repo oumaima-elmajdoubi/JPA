@@ -10,7 +10,7 @@ import com.idsit2024.springboot.modele.Module; // Ajustez le chemin du package s
 //suite import
 @Service
 public class ModuleService {
-    private List<Module> modules=
+    private final List<Module> modules=
             new ArrayList<>(Arrays.asList(new Module(10 ,"Java SE", "Description de la plateforme Java SE"),
                     new Module (12, "Java EE", "Description de la plateforme Java EE")));
     public List<Module> getModules() {
